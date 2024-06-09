@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxymovies.in</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+       emailjs.init("mKAkcvOsTh9tEfVVs"); //ID
+    })();
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Galaxy Movies</h1>
+    <h2>Your Portal to download movies</h2>
+  </header>
+  <div class="wrapper">
+    <form action="#">
+      <input type="file" hidden>
+      <img src="#" alt="qr-code">
+      <div class="content">
+        <i class="fas fa-cloud-upload"></i>
+        <p>Upload QR Code to Download</p>
+      </div>
+    </form>
+    
+    <div class="details">
+      <textarea spellcheck="false" disabled></textarea>
+      <div class="buttons">
+        <button class="close">back</button>
+        <button class="copy">copy link to download</button>
+      </div>
+    </div>
+  </div>
+  <section class="text-gray-600 body-font w-full">
+    <div class="container px-5 py-8 mx-auto md:py-24">
+      <div class="text-center w-full mb-12">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-purple-600">Contact Us</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          If you have any queries, suggestions, or downloading issues, please send us your message here.
+        </p>
+      </div>
+      <div class="lg:w-2/3 md:w-2/3 sm:w-full mx-auto">
+        <form id="contact-form" class="flex flex-wrap -m-2">
+          <div class="p-2 w-full sm:w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 transition-colors duration-200 ease-in-out"
+                required
+              />
+            </div>
+          </div>
+          <div class="p-2 w-full sm:w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 transition-colors duration-200 ease-in-out"
+                required
+              />
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="w-full bg-gray-100 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none transition-colors duration-200 ease-in-out"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button
+              type="submit"
+              class="flex mx-auto bg-purple-600 text-white border-0 py-2 px-8 focus:outline-none hover:bg-purple-700 rounded text-lg"
+            >
+              Send
+            </button>
+          </div>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                  ></path>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
